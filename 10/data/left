@@ -1,0 +1,136 @@
+print("Please select a wire to activate: ")
+print("1:Red")
+print("2:Green")
+print("3:White")
+print("4:Cyan")
+print("5:Purple")
+print("6:Brown")
+print("7:Yellow")
+print("8:Magenta")
+print("9:Light blue")
+print("10:Black")
+print("11:Lime")
+print("12:Pink")
+print("13:Light gray")
+print("14:Gray")
+print("15:Orange")
+print("16:Blue")
+t = io.read()
+if t == "1" then
+  if redc == 0 then
+    redc = 16384
+  else
+    redc = 0
+  end
+
+elseif t == "2" then
+  if greenc == 0 then
+    greenc = 8192
+  else
+    greenc = 0
+  end
+
+elseif t == "3" then
+  if whitec == 0 then
+    whitec = 1
+  else
+    whitec = 0
+  end
+
+elseif t == "4" then
+  if cyanc == 0 then
+    cyanc = 512
+  else
+    cyanc = 0
+  end
+
+elseif t == "5" then
+  if purplec == 0 then
+    purplec = 1024
+  else
+    purplec = 0
+  end
+
+elseif t == "6" then
+  if brownc == 0 then
+    brownc = 4096
+  else
+    brownc = 0
+  end
+
+elseif t == "7" then
+  if yellowc == 0 then
+    yellowc = 16
+  else
+    yellowc = 0
+  end
+
+elseif t == "8" then
+  if magentac == 0 then
+    magentac = 4
+  else
+    magentac = 0
+  end
+
+elseif t == "9" then
+  if lightbluec == 0 then
+    lightbluec = 8
+  else
+    lightbluec = 0
+  end
+
+elseif t == "10" then
+  if blackc == 0 then
+    blackc = 32768
+  else
+    blackc = 0
+  end
+
+elseif t == "11" then
+  if limec == 0 then
+    limec = 32
+  else
+    limec = 0
+  end
+
+elseif t == "12" then
+  if pinkc == 0 then
+    pinkc = 64
+  else
+    pinkc = 0
+  end
+
+elseif t == "13" then
+  if lightgrayc == 0 then
+    lightgrayc = 256
+  else
+    lightgrayc = 0
+  end
+
+elseif t == "14" then
+  if grayc == 0 then
+    grayc = 128
+  else
+    frayc = 0
+  end
+
+elseif t == "15" then
+  if orangec == 0 then
+    orangec = 2
+  else
+    orangec = 0
+  end
+
+elseif t == "16" then
+  if bluec == 0 then
+    bluec = 2048
+  else
+    bluec = 0
+  end
+end
+
+cc = colors.combine(redc, greenc, whitec, cyanc, purplec, brownc, yellowc, magentac, lightbluec, blackc, limec, pinkc, lightgrayc, grayc, orangec, bluec)
+rs.setBundledOutput("left", cc)
+term,.clear()
+term.setCursorpos(1,1)
+shell.run("/sys/bin/redmonitor/redmon")

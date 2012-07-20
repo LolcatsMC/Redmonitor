@@ -1,0 +1,114 @@
+print(" ________________________ ")
+print("| Choose an output:      |")
+print("|                        |")
+print("| 1: Front               |")
+print("| 2: Back                |")
+print("| 3: Top                 |")
+print("| 4: Bottom              |")
+print("| 5: Left                :")
+print("| 6: Right               |")
+print("| 7: Quit to RedMonitor  |")
+print("|________________________|")
+t = io.read()
+if t == "1" then
+  if rs.getOutput("front") == false then
+    rs.setOutput("front", true)
+    print("Redstone output front enabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  else
+    rs.setOutput("front", false)
+    print("Redstone output front disabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  end
+elseif t == "2" then
+  if rs.getOutput("back") == false then
+    rs.setOutput("back", true)
+    print("Redstone output back enabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  else
+    rs.setOutput("back", false)
+    print("Redstone output back disabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  end
+elseif t == "3" then
+  if rs.getOutput("top") == false then
+    rs.setOutput("top", true)
+    print("Redstone output top enabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  else
+    rs.setOutput("top", false)
+    print("Redstone output top disabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  end
+elseif t == "4" then
+  if rs.getOutput("bottom") == false then
+    rs.setOutput("bottom", true)
+    print("Redstone output bottom enabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  else
+    rs.setOutput("bottom", false)
+    print("Redstone output bottom disabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  end
+elseif t == "5" then
+  if rs.getOutput("left") == false then
+    rs.setOutput("left", true)
+    print("Redstone output left enabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  else
+    rs.setOutput("left", false)
+    print("Redstone output left disabled")
+    sleep(1)
+    term.clear()
+    term.setCursorPos(1,1)
+    shell.run("/sys/bin/redmonitor/Output")
+  end
+elseif t == "6" then
+   if rs.getOutput("right") == false then
+     rs.setOutput("right", true)
+     print("Redstone output left enabled")
+     sleep(1)
+     term.clear()
+     term.setCursorPos(1,1)
+     shell.run("/sys/bin/redmonitor/Output")
+   else
+     rs.setOutput("right", false)
+     print("Redstone output left disabled")
+     sleep(1)
+     term.clear()
+     term.setCursorPos(1,1)
+     shell.run("/sys/bin/redmonitor/Output")
+   end
+elseif t == "7" then
+   term.clear()
+   term.setCursorPos(1,1)
+   shell.run("/sys/lib/redmonitor")
+end
+
